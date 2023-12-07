@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuichi Sakamoto Memorial</title>
+    <style>
+         @font-face {
+             font-family: 'MaruBuri';
+            src: url('MaruBuri-SemiBold.otf') format('opentype');
+            }
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #000000; /* 배경색은 필요에 따라 수정하세요. */
+           
+        }
+
+        #mainImage {
+            width: 100%;
+            max-width: 600px; /* 이미지 최대 너비는 필요에 따라 수정하세요. */
+            border-radius: 10px; /* 이미지에 모서리를 둥글게 만듭니다. */
+        }
+
+        #mainText {
+            font-family: 'MaruBuri', sans-serif; /* 폰트 변경 */
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        #buttons {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #f0f0f0; /* 버튼 텍스트 색상은 필요에 따라 수정하세요. */
+        }
+
+        .button img {
+            width: 100%;
+            max-width: 150px; /* 이미지 최대 너비는 필요에 따라 수정하세요. */
+            border-radius: 10px; /* 이미지에 모서리를 둥글게 만듭니다. */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="mainImage" src="main.jpg" alt="Ryuichi Sakamoto">
+
+    <audio id="mainAudio" src="main.mp3" loop autoplay></audio>
+
+    <div id="mainText">RYUICHI SAKAMOTO<br> 1952-2023 </div>
+
+    <div id="buttons">
+        <a href="funeralmusicgallery.html" class="button">
+            <img src="gallery.jpg" alt="Funeral Music Gallery">
+            <div>Funeral Music Gallery</div>
+        </a>
+
+        <a href="memorialboard.html" class="button">
+            <img src="board.jpg" alt="Memorial Board">
+            <div>Memorial Board</div>
+        </a>
+
+        <a href="virtual_flower_tribute.html" class="button">
+            <img src="tribute.jpg" alt="Virtual Flower Tribute">
+            <div>Virtual Flower Tribute</div>
+        </a>
+    </div>
+</body>
+</html>
